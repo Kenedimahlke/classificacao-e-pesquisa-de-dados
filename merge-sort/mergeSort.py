@@ -1,8 +1,8 @@
 
-def merge(v, ini, meio, fim):
-    tam = fim - ini + 1
+def merge(v, inicio, meio, fim):
+    tam = fim - inicio + 1
     temp = [0] * tam
-    p1, p2 = ini, meio + 1
+    p1, p2 = inicio, meio + 1
     fim1, fim2 = False, False
 
     for i in range(tam):
@@ -27,16 +27,16 @@ def merge(v, ini, meio, fim):
                 p2 += 1
 
     for j in range(tam):
-        v[ini + j] = temp[j]
+        v[inicio + j] = temp[j]
 
-def mergeSort(arr, ini, fim):
-    if ini < fim:
-        meio = (ini + fim) // 2
+def mergeSort(arr, inicio, fim):
+    if inicio < fim:
+        meio = (inicio + fim) // 2
 
-        mergeSort(arr, ini, meio)
+        mergeSort(arr, inicio, meio)
         mergeSort(arr, meio + 1, fim)
 
-        merge(arr, ini, meio, fim)
+        merge(arr, inicio, meio, fim)
 
 def main():
     data1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
