@@ -29,14 +29,14 @@ def merge(v, inicio, meio, fim):
     for j in range(tam):
         v[inicio + j] = temp[j]
 
-def mergeSort(arr, inicio, fim):
+def mergeSort(v, inicio, fim):
     if inicio < fim:
         meio = (inicio + fim) // 2
 
-        mergeSort(arr, inicio, meio)
-        mergeSort(arr, meio + 1, fim)
+        mergeSort(v, inicio, meio)
+        mergeSort(v, meio + 1, fim)
 
-        merge(arr, inicio, meio, fim)
+        merge(v, inicio, meio, fim)
 
 def main():
     data1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
