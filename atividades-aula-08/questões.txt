@@ -1,0 +1,14 @@
+
+Questões de Reflexão:
+
+a. Qual método teve o menor número de comparações em média?
+  A busca binária tende a ter o menor número de comparações em média devido à sua divisão eficiente do conjunto de dados ao meio em cada etapa (
+  O(logn)). Em seguida, a pesquisa de Fibonacci tem desempenho semelhante, mas com ligeiramente mais comparações. A pesquisa por salto realiza mais comparações para listas grandes.
+
+b. Em quais situações você acha que cada método seria mais apropriado?
+  Busca binária é ideal para conjuntos grandes, fixos e ordenados, onde a pesquisa é frequente e não há alterações constantes.
+  Pesquisa por salto é útil para conjuntos ordenados de tamanho médio, especialmente se não for prático manter a lista totalmente ordenada o tempo todo.
+  Pesquisa de Fibonacci é apropriada para listas ordenadas com tamanho irregular, pois utiliza divisões baseadas na sequência de Fibonacci em vez de divisões uniformes.
+
+c. Como a ordenação da lista afeta a eficiência de cada método?
+  Todos os métodos exigem uma lista ordenada para funcionar eficientemente. Sem ordenação, busca binária, pesquisa por salto e pesquisa de Fibonacci perdem eficácia e podem se tornar inúteis.
