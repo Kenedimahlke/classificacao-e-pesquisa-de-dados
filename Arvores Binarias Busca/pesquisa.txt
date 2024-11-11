@@ -1,0 +1,22 @@
+-=-=-=-=-=-=-=-=-=-=-=-=-=- Red-Black Tree (Árvore Rubro-Negra) -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+A Red-Black Tree é uma árvore binária de busca auto-balanceada em que cada nó é vermelho 
+ou preto. As principais propriedades incluem: a raiz ser sempre preta, filhos de nós 
+vermelhos serem sempre pretos, e todos os caminhos de um nó até suas folhas descendentes 
+conterem o mesmo número de nós pretos. Essas propriedades garantem que a árvore permaneça 
+equilibrada, possibilitando operações eficientes de busca, inserção e deleção com complexidade 
+de tempo O(log n).
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- B Tree -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+A B Tree é uma árvore auto-balanceada amplamente utilizada em sistemas de banco de dados 
+e sistemas de arquivos. Cada nó pode ter um número variável de filhos dentro de um intervalo 
+pré-definido, garantindo que todos os nós internos tenham pelo menos metade dos filhos preenchidos 
+e que todos os nós folha estejam no mesmo nível. Esse design permite que as operações de busca, 
+inserção e deleção sejam realizadas de maneira eficiente, mantendo os dados classificados.
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- B+ Tree -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+A B+ Tree é uma variação da B Tree, onde todas as folhas estão no mesmo nível e estão ligadas 
+entre si através de ponteiros, formando uma lista ligada. Além disso, os nós internos contêm 
+apenas chaves, sem pares chave-valor. Esse design é especialmente eficiente para operações 
+de escaneamento de intervalos de valores e é comumente utilizado em contextos de armazenamento 
+em blocos, como sistemas de arquivos e bancos de dados, proporcionando um acesso rápido e eficiente 
+aos dados armazenados.
